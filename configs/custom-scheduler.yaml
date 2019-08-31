@@ -41,7 +41,7 @@ spec:
       serviceAccountName: custom-scheduler
       containers:
       - name: kube-second-scheduler
-        image: davidhaja/kube-repo:demo2
+        image: davidhaja/kube-repo:demo3
         imagePullPolicy: IfNotPresent
         resources:
           requests:
