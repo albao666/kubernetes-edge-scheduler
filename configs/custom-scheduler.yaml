@@ -53,6 +53,10 @@ spec:
       - name: regcred
       nodeSelector:
         kubernetes.io/hostname: master
+      tolerations:
+      - key: "node-role.kubernetes.io/master"
+        operator: "Exists"
+        effect: "NoSchedule"
       hostNetwork: false
       hostPID: false
       volumes: []
