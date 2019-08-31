@@ -52,7 +52,7 @@ spec:
       imagePullSecrets:
       - name: regcred
       nodeSelector:
-        kubernetes.io/hostname: master
+        kubernetes.io/hostname: media-master
       tolerations:
       - key: "node-role.kubernetes.io/master"
         operator: "Exists"
